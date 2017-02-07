@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'erb'
+require 'haml'
 
 images = [
   "1.jpg",
