@@ -1,0 +1,19 @@
+// ---------------------
+//  TYPOGRAPHY
+// ---------------------
+
+@font-face {
+    font-family: "montserratlight";
+    src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"),
+         url("../fonts/montserrat-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "montserratbold";
+    src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"),
+         url("../fonts/montserrat-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}

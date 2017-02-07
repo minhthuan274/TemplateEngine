@@ -1,0 +1,23 @@
+// ---------------------
+//  FOOTER
+// ---------------------
+
+footer {
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+	div {
+		height: 100px;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
+		span.copyright {
+			font-family: "montserratbold", sans-serif;
+		}
+		span.reserved {
+			text-transform: lowercase;
+			color: #656565;
+		}
+	}
+}

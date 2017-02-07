@@ -1,0 +1,243 @@
+// ---------------------
+//  BLOG POST
+// ---------------------
+
+#post {
+	.inside-section {
+		.title-text {
+			display: flex;
+			flex-flow: column nowrap;
+			align-items: center;
+			justify-content: center;
+			height: 350px;
+			h2 {
+				font-family: "montserratlight", sans-serif;
+				font-size: 2.618rem;
+				text-transform: lowercase;
+				text-align: center;
+			}
+			span {
+				padding-top: 100px;
+			}
+		}
+		.inner-content {
+			.post-image {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				img {
+					width: 100%;
+				}
+			}
+			article {
+				padding: 0 20%;
+				.border {
+					width: 50px;
+					border-bottom: 2px #000 solid;
+					margin-bottom: 50px;
+					padding-top: 50px;
+				}
+				p {
+					color: #656565;
+					font-size: 1rem;
+				}
+				p:nth-of-type(1), p:nth-of-type(2), p:nth-of-type(7) {
+					padding-bottom: 40px;
+				}
+				em {
+					display: block;
+					color: #000;
+					font-size: 2.618rem;
+					font-style: normal;
+					text-align: center;
+					padding: 50px 0;
+				}
+				.ornaments {
+					display: flex;
+					flex-flow: column nowrap;
+					p {
+						display: inline-block;
+						padding: 0 0 0 50px;
+						margin-top: -20px;
+					}
+					p:nth-of-type(2) {
+						padding-bottom: 25px;
+					}
+					.ornament {
+						width: 50px;
+						border-bottom: 2px #000 solid;
+						margin-top: 50px;
+						margin-left: -25px;
+					}
+				}
+				blockquote {
+					.border {
+						width: 50px;
+						border-bottom: 2px #000 solid;
+						margin-bottom: 50px;
+						padding-top: 50px;
+					}
+					font-size: 2.618rem;
+					margin-left: -100px;
+				}
+				.social {
+					padding: 100px 0;
+					ul {
+						display: flex;
+						flex-flow: row nowrap;
+						margin-top: 20px;
+						padding-left: 10px;
+					}
+					li {
+						list-style: none;
+						padding-right: 20px;
+					}
+					.circle {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 40px;
+						height: 40px;
+						background-color: #000;
+						border-radius: 50%;
+					}
+					i {
+						font-size: 1.618rem;
+						color: #fff;
+					}
+				}
+			}
+		}
+		@media only screen and (min-width: 48em) {
+			.inner-content {
+				article {
+					padding: 0 10%;
+					.social {
+						ul {
+							justify-content: flex-start;
+						}
+					}
+				}
+			}
+		}
+		@media only screen and (max-width: 48em) {
+			.inner-content {
+				.post-image {
+					img {
+						width: 100%;
+					}
+				}
+				article {
+					padding: 0 5%;
+					blockquote {
+						margin-left: 0;
+					}
+					.social {
+						ul {
+							justify-content: space-around;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#related-posts {
+	background-color: #ffe1bd;
+	.inside-section {
+		.title-text {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+			justify-content: center;
+			height: 200px;
+			h2 {
+				font-family: "montserratlight", sans-serif;
+				font-size: 2.618rem;
+				text-transform: lowercase;
+			}
+		}
+		.inner-content {
+			.post {
+				display: flex;
+				flex-flow: row nowrap;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				span {
+					display: inline;
+				}
+				span::before {
+					content: "\a ";
+					white-space: pre;
+				}
+			}
+			.topic {
+				display: flex;
+				flex-flow: column nowrap;
+				align-items: flex-start;
+				justify-content: center;
+				height: 400px;
+				a {
+					color: #000;
+				}
+				h3 {
+					font-size: 2.5rem;
+					margin-top: 15px;
+					text-align: left;
+				}
+				.border {
+					width: 50px;
+					border-bottom: 2px #000 solid;
+					padding-top: 10px;
+				}
+				p.function {
+					margin-top: 10px;
+				}
+			}
+		}
+		@media only screen and (min-width: 48em) {
+			.inner-content {
+				.posts-links {
+					display: none;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 48em) {
+	#related-posts {
+		.inside-section {
+			.inner-content {
+				.slider-pro {
+					display: none;
+				}
+				.posts-links {
+					display: flex;
+					flex-flow: column nowrap;
+					align-items: flex-start;
+					justify-content: center;
+					padding-left: 10%;
+					padding-bottom: 10%;
+					i {
+						font-size: 1rem;
+						padding-right: 20px;
+					}
+					span {
+						padding-bottom: 10px;
+						a {
+							color: #000;
+							font-family: "montserratbold", sans-serif;
+							font-size: 1rem;
+						}
+						span.date {
+							color: #656565;
+							font-size: 0.618rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

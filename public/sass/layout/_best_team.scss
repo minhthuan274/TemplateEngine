@@ -1,0 +1,88 @@
+// ---------------------
+//  BEST TEAM
+// ---------------------
+
+#best-team {
+	background-color: #ffe1bd;
+	.inside-section {
+		.title-text {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+			justify-content: center;
+			height: 200px;
+			h2 {
+				font-family: "montserratlight", sans-serif;
+				font-size: 2.618rem;
+				text-transform: lowercase;
+			}
+		}
+		.inner-content {
+			.persons {
+				display: flex;
+				flex-flow: row nowrap;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				span {
+					display: inline;
+				}
+				span::before {
+					content: "\a ";
+					white-space: pre;
+				}
+			}
+			.team {
+				display: flex;
+				flex-flow: column nowrap;
+				align-items: center;
+				justify-content: flex-start;
+				height: 400px;
+				.circle {
+					width: 168px;
+					height: 168px;
+					background-color: #fff;
+					border-radius: 50%;
+					.image-one, .image-two, .image-three {
+						background-image: url(http://placehold.it/560x560);
+						background-repeat: no-repeat;
+						background-size: cover;
+					}
+				}
+				h3 {
+					font-size: 2.5rem;
+					margin-top: 15px;
+				}
+				.border {
+					width: 50px;
+					border-bottom: 2px #000 solid;
+					padding-top: 10px;
+				}
+				p.function {
+					margin-top: 10px;
+				}
+			}
+		}
+		@media only screen and (min-width: 49em) {
+			.inner-content {
+				.non-slider {
+					display: none;
+				}
+			}
+		}
+		@media only screen and (max-width: 48em) {
+			.inner-content {
+				.slider-pro {
+					display: none;
+				}
+				.non-slider {
+					.team {
+						h3, p {
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}

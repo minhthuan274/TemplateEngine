@@ -1,0 +1,50 @@
+// ---------------------
+//  GENERAL
+// ---------------------
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::selection {
+	background-color: #000;
+	color: #fff;
+}
+
+body {
+	background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, blockquote {
+	font-family: "montserratbold", sans-serif;
+}
+
+h3.up {
+	font-family: "montserratlight", sans-serif;
+}
+
+h3.down {
+	font-family: "montserratbold", sans-serif;
+}
+
+a, p, em, span, form {
+	font-family: "montserratlight", sans-serif;
+}
+
+a#go-to-top {
+	position: fixed;
+	bottom: 0;
+	right: 2%;
+	z-index: 999;
+	i {
+		font-size: 4.236rem;
+		color: #000;
+	}
+}
+@media screen and (max-width: 48em) {
+	a#go-to-top {
+		right: 5%;
+	}	
+}

@@ -1,0 +1,82 @@
+// ---------------------
+//  TESTIMONIALS
+// ---------------------
+
+#testimonials {
+	.inside-section {
+		.title-text {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+			justify-content: center;
+			height: 200px;
+			h2 {
+				font-family: "montserratlight", sans-serif;
+				font-size: 2.618rem;
+				text-transform: lowercase;
+			}
+		}
+		.inner-content {
+			.opinion {
+				display: flex;
+				height: 300px;
+				.person {
+					display: flex;
+					flex: 1 1 50%;
+					flex-flow: column nowrap;
+					align-items: flex-end;
+					justify-content: center;
+					padding-right: 50px;
+					h3 {
+						font-size: 2rem;
+					}
+					.border {
+						width: 50px;
+						border-bottom: 2px #000 solid;
+						padding-top: 10px;
+					}
+					p {
+						font-size: 1rem;
+						padding-top: 10px;
+					}
+				}
+				.description {
+					display: flex;
+					flex: 1 1 50%;
+					align-items: center;
+					justify-content: center;
+					padding-left: 50px;
+					padding-right: 100px;
+					p {
+						color: #656565;
+					}
+				}
+			}
+			.testimonials-images {
+				display: flex;
+				flex-flow: row nowrap;
+				align-items: center;
+				justify-content: center;
+				img {
+					width: 100%;
+					padding: 10px;
+				}
+			}
+			@media only screen and (max-width: 48em) {
+				.opinion {
+					flex-flow: column nowrap;
+					.person {
+						align-items: center;
+						padding: 0;
+					}
+					.description {
+						padding: 50px;
+					}
+				}
+				.slider-pro {
+					display: none;
+				}
+			}
+		}
+	}
+}
